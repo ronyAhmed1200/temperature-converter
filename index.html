@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Dancing+Script:wght@400;500&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css style file -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Temperature Converter</h1>
+        <div class="form">
+          <form onsubmit="convertTemp(); return false">
+            <div>
+              <input
+                type="number"
+                name="temp"
+                id="temp"
+                placeholder="Enter temperature"
+                required
+              />
+              <select id="tempOpt">
+                <option value="cel">°Celcius (°C)</option>
+                <option value="fah">°Fahrenheit (°F)</option>
+              </select>
+              <div>
+                <input type="submit" class="btn" value="Convert" id="convert" />
+              </div>
+              <span class="result-container"></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
